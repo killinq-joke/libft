@@ -16,7 +16,7 @@ int		ft_twoinstances(const char *s, int c)
 	return (0);
 }
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	int i;
 
