@@ -1,3 +1,5 @@
+#include "libft.h"
+
 int		ft_twoinstances(const char *s, int c)
 {
 	int i;
