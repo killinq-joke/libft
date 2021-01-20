@@ -1,3 +1,5 @@
+#include "../libft.h"
+
 int	ft_atoi(const char *nptr)
 {
 	int result;
@@ -16,15 +18,10 @@ int	ft_atoi(const char *nptr)
 		i++;
 		j++;
 	}
-	while (nptr[j])
-	{
-
-		j++;
-	}
 	while (nptr[i] && ft_isdigit(nptr[i]))
 	{
 		result *= 10;
-		result += nptr[i];
+		result += nptr[i] - '0';
 		i++;
 	}
 	return (sign * result);
