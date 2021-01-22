@@ -1,4 +1,4 @@
-#include "../libft.h"
+#include "libft.h"
 
 char	*ft_strndup(char const *s, size_t n)
 {
@@ -18,10 +18,11 @@ char	*ft_strndup(char const *s, size_t n)
 	return (duplicate);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
-	char **split;
-	size_t i;
+	char		**split;
+	size_t		i;
+	size_t		j;
 	unsigned int word_count;
 
 	word_count = 0;
@@ -41,12 +42,13 @@ char **ft_split(char const *s, char c)
 	i = 0;
 	while (i < word_count)
 	{
+		j = 0;
 		while (s[j] != c)
 		{
 			j++;
 		}
 		split[i] = ft_strndup(s, j);
-		if ()
+		if (0)
 		{
 
 		}
